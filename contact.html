@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: s223330324@deakin.edu.au</p>
+            <h3>Got any queries? Submit them below!</h3>
+            <form id="query_form" action="backend.php">
+                <div><label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Your Name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                </div>
+
+                <div>
+                    <label for="contact_num">Contact number</label>
+                    <input type="text" id="contact_num" placeholder="Your Contact number">
+                </div>
+
+                <div>
+                    <label for="query">Your query</label>
+                    <textarea name="query" id="query" cols="30" rows="10" placeholder="Enter your Query"></textarea>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
